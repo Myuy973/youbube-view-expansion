@@ -1,0 +1,22 @@
+{
+	"name": "YouTube live view",
+	"description": "説明",
+	"manifest_version": 3,
+	"version": "1.0",
+	"permissions": [
+        "storage",
+        "tabs",
+        "activeTab", 
+        "background"
+    ],
+	"content_scripts": [
+        {
+         	"js": ["js/live-view.js"],
+			"matches": ["file:///C:/Users/macaroni/Desktop/test.html", "https://www.youtube.com/watch?v=*"]
+        },
+		{
+			"css": ["css/view.css"],
+			"matches": ["file:///C:/Users/macaroni/Desktop/test.html", "https://www.youtube.com/watch?v=*"]
+		}
+    ]
+}

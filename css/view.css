@@ -1,0 +1,37 @@
+html {
+    overflow-x: hidden;
+}
+
+#columns {
+
+}
+
+#primary {
+    padding-right: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+#player-container-outer {
+    max-width: none !important;
+}
+
+.view {
+    width: 100% !important;
+    height: 485px !important;
+}
+
+.bottom-bar {
+    width: 100% !important;
+    left: 0 !important;
+}
+
+#secondary {
+    padding-right: 0 !important;
+    max-width: 100% !important;
+
+}
+
+#below {
+    margin: 0 15px !important;
+}
