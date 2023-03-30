@@ -7,16 +7,26 @@ video_size_change()
 
 window.addEventListener("resize", video_size_change());
 
+
+var video_attributes_check = new MutationObserver(() => {
+    video_size_change();
+});
+var config = { attributes: true };
+video_attributes_check.observe(video_object, config);
+  
+
+
 var bottom_bar = document.getElementsByClassName("ytp-chrome-bottom");
 bottom_bar[0].classList.add("bottom-bar");
 
 
 
 function video_size_change() {
-    
+    // console.log("video_size_change start");
     if (window.outerWidth === screen_size) {
         // video_object[0].classList.add("video-view");
         // video_object.style.width = "872px";
+        // console.log("video_size_change check ok");
         video_object.style.width = "100%";
         video_object.style.height = "516px";
     }
