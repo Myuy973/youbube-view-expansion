@@ -12,11 +12,11 @@
 	"content_scripts": [
         {
          	"js": ["js/live-view.js"],
-			"matches": ["file:///C:/Users/macaroni/Desktop/test.html", "https://www.youtube.com/watch?v=*"]
+			"matches": ["https://www.youtube.com"]
         },
 		{
 			"css": ["css/view.css"],
-			"matches": ["file:///C:/Users/macaroni/Desktop/test.html", "https://www.youtube.com/watch?v=*"]
+			"matches": ["https://www.youtube.com"]
 		}
     ]
 }
