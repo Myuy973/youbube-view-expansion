@@ -1,5 +1,5 @@
 {
-	"name": "Youbube View Expansion",
+	"name": "Youtube View Expansion",
 	"description": "説明",
 	"manifest_version": 3,
 	"version": "1.0",
@@ -13,7 +13,7 @@
         {
          	"js": ["js/live-view.js"],
 			"css": ["css/view.css"],
-			"matches": ["https://www.youtube.com/*"]
+			"matches": ["https://www.youtube.com/watch?v=*"]
 		}
     ]
 }
