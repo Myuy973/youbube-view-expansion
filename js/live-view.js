@@ -23,8 +23,27 @@ window.onload = function() {
 
         video_object = document.getElementById("player").getElementsByTagName("video")[0];
         video_size_change();
+
+        // test();
     });
     
+
+    function test() {
+        var i = 0;
+        const chat_iframe = document.getElementById("chatframe");
+        if (chat_iframe && i == 0) {
+            console.log("yt-live-chat-header-renderer is true" + header);
+            const chat_header = chat_iframe.contentWindow.document.getElementsByTagName("yt-live-chat-header-renderer")[0];
+            chat_header.style.height = "25px";
+            const chat_header_text = chat_iframe.contentWindow.document.getElementById("label-text");
+            chat_header_text.style.fontSize = "11px";
+            const chat = chat_iframe.contentWindow.document.getElementById("chat");
+            chat.style.minHeight = "543px";
+            i++;
+        } else {
+            console.log("yt-live-chat-header-renderer is false" + header);
+        }
+    }
 
     
 

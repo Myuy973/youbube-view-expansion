@@ -41,19 +41,6 @@ html {
     animation-fill-mode: forwards;
 }
 
-#player-container-outer {
-    /* max-width: none !important; */
-}
-
-.video-view {
-    /* width: 100% !important;
-    height: 485px !important; */
-}
-
-.bottom-bar {
-    /* width: 100% !important;
-    left: 0 !important; */
-}
 
 #secondary {
     padding: 0 !important;
@@ -71,6 +58,29 @@ html {
     margin: 0 15px !important;
 }
 
+#secondary-inner {
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 56px);
+    width: var(--ytd-watch-flexy-sidebar-width);
+}
+
+.yt-live-chat-header-renderer-class {
+    height: 25px !important;
+}
+
+/* .chat-messages:first-of-type {
+    height: 25px !important;
+} */
+
+.label-text-class {
+    font-size: 11px !important;
+}
+
+.chat-class {
+    min-height: 543px !important;
+}
 
 
 
