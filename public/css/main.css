@@ -1,0 +1,47 @@
+
+
+#notice {
+    position: absolute;
+    top: -9px;
+    left: 70%;
+    width: 200px;
+    height: 18px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0%;
+}
+
+.notice-fade-in {
+    animation-name: notice-fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.notice-fade-out {
+    animation-name: notice-fade-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes notice-fade-in {
+    from {
+        opacity: 0%;
+    }
+    
+    to {
+        opacity: 100%;
+    }
+
+}
+@keyframes notice-fade-out {
+    from {
+        opacity: 100%;
+    }
+    
+    to {
+        opacity: 0%;
+    }
+}

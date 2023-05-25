@@ -1,0 +1,76 @@
+
+:root {
+    --second-width: 340px;
+}
+
+
+html {
+    overflow-x: hidden;
+    /* --ytd-margin-6x: 0 !important; */
+}
+
+
+/* .wide-video { */
+#player video:first-child {
+    width: 100% !important;
+    height: 516px !important;
+}
+
+
+#columns {
+    justify-content: unset !important;
+}
+
+#primary {
+    /* max-width:  */
+    --ytd-watch-flexy-max-player-width: calc((100vh - 84px) * (16 / 9)) !important;
+    /* --ytd-watch-flexy-max-player-width: calc(100vh - var(--second-width)) !important; */
+    padding: 0 !important;
+    margin: 0 !important;
+    /* max-width: 100% !important; */
+}
+
+
+
+#secondary {
+    padding: 0 !important;
+    overflow-x: hidden;
+    --ytd-watch-flexy-sidebar-width: var(--second-width) !important;
+    /* max-width: 100% !important; */
+
+}
+
+.yt-live-chat-text-message-renderer {
+    display: none !important;
+}
+
+#below {
+    margin: 0 15px !important;
+}
+
+#secondary-inner {
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 56px);
+    width: var(--ytd-watch-flexy-sidebar-width);
+}
+
+.yt-live-chat-header-renderer-class {
+    height: 25px !important;
+}
+
+/* .chat-messages:first-of-type {
+    height: 25px !important;
+} */
+
+.label-text-class {
+    font-size: 11px !important;
+}
+
+.chat-class {
+    min-height: 543px !important;
+}
+
+
+

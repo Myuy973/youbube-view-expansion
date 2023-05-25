@@ -1,0 +1,19 @@
+{
+  "name": "youbube-view-expansion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Myuy973/youbube-view-expansion.git",
+  "author": "matumoto-yu <songbenyuzai@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=production"
+  },
+  "dependencies": {
+    "@types/chrome": "^0.0.236",
+    "copy-webpack-plugin": "^11.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"name": "Youtube",
+	"description": "説明",
+	"manifest_version": 3,
+	"version": "1.0",
+	"permissions": [
+		"tabs",
+		"scripting"
+	],
+
+	"host_permissions": ["http://*/*", "https://*/*"],
+
+
+	"content_scripts": [
+        {
+			"js": ["js/main.js"],
+		   "css": ["css/main.css"],
+		   "matches": ["https://www.youtube.com/*"],
+		   "run_at": "document_end"
+	   }
+    ],
+	"action": {
+		"default_popup": "option.html"
+	},
+	"background": {
+		"service_worker": "js/background.js"
+	}
+
+
+}

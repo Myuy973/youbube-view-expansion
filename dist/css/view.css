@@ -1,7 +1,21 @@
+
+:root {
+    --second-width: 340px;
+}
+
+
 html {
     overflow-x: hidden;
     /* --ytd-margin-6x: 0 !important; */
 }
+
+
+/* .wide-video { */
+#player video:first-child {
+    width: 100% !important;
+    height: 516px !important;
+}
+
 
 #columns {
     justify-content: unset !important;
@@ -9,43 +23,19 @@ html {
 
 #primary {
     /* max-width:  */
-    --ytd-watch-flexy-max-player-width: calc((100vh - (56px + 24px + 4px)) * (16 / 9)) !important;
+    --ytd-watch-flexy-max-player-width: calc((100vh - 84px) * (16 / 9)) !important;
+    /* --ytd-watch-flexy-max-player-width: calc(100vh - var(--second-width)) !important; */
     padding: 0 !important;
     margin: 0 !important;
     /* max-width: 100% !important; */
 }
 
-#notice {
-    position: absolute;
-    top: -9px;
-    left: 70%;
-    width: 200px;
-    height: 18px;
-    background-color: white;
-    color: black;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 10px;
-    opacity: 0%;
-}
-
-.notice-fade-in {
-    animation-name: notice-fade-in;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.notice-fade-out {
-    animation-name: notice-fade-out;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
 
 
 #secondary {
     padding: 0 !important;
     overflow-x: hidden;
-    --ytd-watch-flexy-sidebar-width: 340px !important;
+    --ytd-watch-flexy-sidebar-width: var(--second-width) !important;
     /* max-width: 100% !important; */
 
 }
@@ -84,22 +74,3 @@ html {
 
 
 
-@keyframes notice-fade-in {
-    from {
-        opacity: 0%;
-    }
-    
-    to {
-        opacity: 100%;
-    }
-
-}
-@keyframes notice-fade-out {
-    from {
-        opacity: 100%;
-    }
-    
-    to {
-        opacity: 0%;
-    }
-}
